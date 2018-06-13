@@ -24,7 +24,7 @@ function exactMatchMine(drivers, toBeMatched){
   
   return drivers.filter(function(driver){
     
-    let match = false;
+    let match = null;
     
     for (const key in toBeMatched)
       match = driver.key === toBeMatched.key;

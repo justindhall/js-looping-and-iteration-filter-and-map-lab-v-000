@@ -35,14 +35,14 @@ function exactMatch(drivers, toBeMatched){
   
 }
 
-function exactMatchAA (drivers, matcher) {
-  return drivers.filter(function (driver) {
-    let matches = false;
-
-    for (const key in matcher) {
-      matches = driver[key] === matcher[key];
-    }
-
-    return matches;
-  });
+function exactMatchToList(drivers, toBeMatched){
+  
+  return exactMatch(drivers, toBeMatched).map(function (driver) {
+    
+    return driver.name;
+    
+  })
+  
+  
+  
 }

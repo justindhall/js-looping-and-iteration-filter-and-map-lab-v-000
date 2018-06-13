@@ -1,17 +1,11 @@
 // Code your solution here:
 
-function driversWithRevenueOverMine(drivers, revenue){
+function driversWithRevenueOver(drivers, revenue){
   
   return drivers.filter(function(driver){
     
-    return driver.reveneu > revenue;
+    return driver.revenue > revenue;
     
   });
   
-}
-
-function driversWithRevenueOver (drivers, revenue) {
-  return drivers.filter(function (driver) {
-    return driver.revenue > revenue;
-  });
 }

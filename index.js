@@ -27,7 +27,9 @@ function exactMatch(driver, object){
     let match = [];
     
     for (const key in object)
-      match = driver.key === ob
+      match = driver.key === object.key;
+    
+    return match;
     
   })
   

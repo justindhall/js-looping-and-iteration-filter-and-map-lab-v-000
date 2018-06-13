@@ -20,7 +20,7 @@ function driverNamesWithRevenueOver(drivers, revenueValue){
   
 }
 
-function exactMatchMine(drivers, toBeMatched){
+function exactMatch(drivers, toBeMatched){
   
   return drivers.filter(function(driver){
     
@@ -35,7 +35,7 @@ function exactMatchMine(drivers, toBeMatched){
   
 }
 
-function exactMatch (drivers, matcher) {
+function exactMatchAA (drivers, matcher) {
   return drivers.filter(function (driver) {
     let matches = false;
 

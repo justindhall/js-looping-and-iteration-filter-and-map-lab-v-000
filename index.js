@@ -26,8 +26,8 @@ function exactMatchMine(drivers, toBeMatched){
     
     let match = null;
     
-    for (const key in toBeMatched)
-      match = driver.key === toBeMatched.key;
+    for (const key in toBeMatched) {
+      match = driver.key === toBeMatched.key;}
     
     return match;
     
